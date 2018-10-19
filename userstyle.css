@@ -2,6 +2,9 @@
 .App,
 .App-content,
 .App-banner,
+.App-root,
+.UnderTheSun-root,
+.InfoPanel-root,
 .DailySubscribe,
 /*.MediaMaterial,*/
 .Material-share,
@@ -16,13 +19,18 @@
 .QuizTopBar {
     background: #141414 !important;
 }
+/*.InfoPanel-root {
+    background: rgb(37, 37, 37) !important;
+}*/
 .MediaMaterial {
     background: none;
 }
+.GeneralMaterial-layout,
 .Material-container {
     background-color: #141414;
     border-color: transparent;
 }
+.MaterialNote-root:before,
 .Material-footer::before {
     background-color: #333;
 }
@@ -45,18 +53,19 @@
 .App-share,
 .App-shareBranding,
 .Page-chronology,
-.ChronologyItem,
+.ChronologyItem, .ChronologyItem-root,
 .Chronology-more,
 .DailySubscribe-main,
 .DailyInformer,
-.TopicBlock,
+.TopicBlock, .TopicBlock-root,
 .InfoPanel,
 /*.PageBlock,*/
 .VideoBlock, .VideoBlock-content,
 .PostsGroup,
 .NewsBlock,
 .AtlasBlock,
-.SuperBlock,
+.SuperBlock, .SuperBlock-root,
+.RelatedBlock-root,
 .Meduzacare-body {
     background-color: #222 !important;
 }
@@ -64,7 +73,7 @@
 .CardSidebar-chapter,
 .CardSidebar-title,
 .QuizTopBar-title,
-.ChronologyItem,
+.ChronologyItem, .ChronologyItem-root,
 .DailyInformer,
 .PageBlock {
     color: inherit;
@@ -79,7 +88,7 @@
 .TextErrorForm-text, .TextErrorForm-send,
 /*.Chronology-more:hover,*/
 
-.ChronologyItem:hover,
+.ChronologyItem:hover, .ChronologyItem-root:hover,
 .NewsBlock:hover:hover,
 .MediaBlock:hover .MediaBlock-info,
 .CardBlock:hover .CardBlock-info,
@@ -106,7 +115,6 @@
 .ChatDetails-messageBody,
 .Card-chapter,
 /*.CardChapter-head span,*/
-
 .CardAd,
 .MaterialWithAd,
 .CardsPopup,
@@ -118,6 +126,7 @@
 .VideoBlock--1to3 .VideoBlock-title, .VideoBlock--1to4 .VideoBlock-title,
 .PictureBlock--1to3 .PictureBlock-title, .PictureBlock--1to4 .PictureBlock-title,
 .MediaBlock-content--1to3, .MediaBlock-content--1to4,
+.MediaBlock-is1to3 .MediaBlock-contentWrap, .MediaBlock-is1to4 .MediaBlock-contentWrap,
 .MediaMaterialHeader-first, .MediaMaterialHeader-second,
 .NewsTitle--isInImageMaterial,
 .QuizTopBar-firstTitle,
@@ -127,6 +136,7 @@
 .NewYearCardChapter3-home--warning {
     color: #ddd !important;
 }
+.SimpleBlock-blockquote a,
 .RawBlock--blockquote,
 .Context>blockquote a,
 .CardChapter-body>blockquote a,
@@ -144,7 +154,7 @@ body,
 .Material,
 .Material-content,
 .CardSidebar-chapterTitle,
-.CardChapter-title,
+.CardChapter-title, .CardTitle-title,
 .StaticPopup-title,
 .QuizQuestion-title,
 .QuizTextAnswer-title,
@@ -159,12 +169,13 @@ body,
 }
 .PictureBlock,
 .CardBlock,
-.MediaBlock {
+.MediaBlock, .MediaBlock-root {
     background: #222;
 }
 .NewsEntryImage,
 .CardSidebar,
 .CardChapter,
+.CardMaterial-card,
 .CardMaterial-share,
 .CardMaterial-html,
 .CardsPopup-content,
@@ -186,12 +197,30 @@ body,
 .SourceQuote-link {
     background-color: #181818 !important;
 }
-.SourceQuote-footer {
+.SourceQuote-footer, .SourceBlock-root footer {
     color: #b38d59;
 }
 .SourceQuote-link:hover,
 .SourceQuote-link:visited {
     background-color: #222 !important;
+}
+.StaticPopup-priceList,
+.StaticPopup-mediaKit,
+.NewSourceQuote .NewSourceQuote-text, .SourceBlock-root {
+    color: #aaa !important;
+}
+.NewSourceQuote-link, .SourceBlock-root {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.SourceBlock-root footer {
+    border-color: rgba(255, 255, 255, .25);
+}
+.NewSourceQuote-link:hover, .SourceBlock-root:hover,
+.NewSourceQuote-link:visited, SourceBlock-root:visited {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.NewSourceQuote-footer, .SourceBlock-origin {
+    color: #888 !important;
 }
 .PopupTopBar {
     background-color: #333 !important;
@@ -276,10 +305,11 @@ hr {
 .MediaBlock--1to3 .MediaBlock-promo,
 .MediaBlock--1to4 .MediaBlock-promo,
 .DatedChronology-date,
-.ChronologyItem,
+.ChronologyItem, .ChronologyItem-root,
 .ChronologyItem-promo,
 .ExchangeRates-item,
 .DownloadApps-listItem,
+.TopicBlock-item, /* it look like .TopicListItem was replaced with .TopicBlock-item */
 .TopicListItem--1to1.TopicListItem--index-1.TopicListItem--light,
 .TopicListItem--1to1.TopicListItem--index-2.TopicListItem--light,
 .TopicListItem--index-0.TopicListItem--light,
@@ -295,24 +325,11 @@ hr {
 .MaterialTopBar-container {
     background: none !important;
 }
+/* it looks like .MaterialTopBar was replaced with .MaterialPanel-sticked */
+.MaterialPanel-sticked,
 .MaterialTopBar,
 .MaterialTopBar--fixed .MaterialTopBar-container {
     background-color: rgba(32, 32, 32, 0.75) !important;
-}
-.StaticPopup-priceList,
-.StaticPopup-mediaKit,
-.NewSourceQuote .NewSourceQuote-text {
-    color: #aaa !important;
-}
-.NewSourceQuote-link {
-    background-color: rgba(128, 128, 128, 0.1);
-}
-.NewSourceQuote-link:hover,
-.NewSourceQuote-link:visited {
-    background-color: rgba(128, 128, 128, 0.2);
-}
-.NewSourceQuote-footer {
-    color: #888 !important;
 }
 .Thrones {
     background-color: #252525 !important;
@@ -440,12 +457,15 @@ a[style*="background-color: rgb(255, 255, 255)"] {
 .UserQuote-media:before {
     background-color: rgba(238, 238, 238, 0.25) !important;
 }
+.RelatedBlock-root h3,
 .Related h3 {
     color: #888 !important;
 }
+.RelatedBlock-root a,
 .Related a {
     color: #999 !important;
 }
+.RelatedBlock-root ul li,
 .Related ul li {
     border-color: rgba(238, 238, 238, 0.25) !important;
 }
@@ -646,10 +666,12 @@ mark {
     color: inherit !important;
 }
 
-.FootnoteLink {
-    background-color: #333;
+/* .FootnoteLink was replaced with this */
+.FootnoteLink, span[data-body] {
+    background-color: #282828 !important;
+    box-shadow: inset 1px 0 #777, inset 0 1px #777, inset -1px 0 #777, inset 0 -1px #777;
 }
-.FootnoteLink:hover {
+.FootnoteLink:hover, span[data-body]:hover {
     background-color: #444;
 }
 .FootnoteLink--active,
@@ -658,7 +680,7 @@ mark {
 }
 
 .Wally-result,
-.Footnote {
+.Footnote, .Footnote-root {
     border-color: rgba(255,255,255,0.1);
     background-color: #222;
     box-shadow: none !important;
@@ -669,6 +691,7 @@ mark {
 }
 
 mark,
+.SimpleBlock-blockquote,
 .RawBlock--blockquote,
 .CardChapter-body>blockquote,
 .Lead>blockquote,
@@ -697,12 +720,12 @@ mark,
     box-shadow: inset 0 0 0 1px #191919;
 }
 
-.ChronologyItem::after {
+.ChronologyItem::after, .ChronologyItem-root::after {
     box-shadow: none !important;
     border-radius: 0 !important;
     border-bottom: 1px solid #191919;
 }
-.ChronologyItem {
+.ChronologyItem, .Chronology-item, .ChronologyItem-root {
     margin: 0;
 }
 .ChronologyItem-image {
@@ -726,6 +749,7 @@ mark,
     box-shadow: inset 0 -0.05em #111, inset 0 -0.1em #b88b58;
 }
 
+.SimpleBlock-blockquote a,
 .RawBlock--blockquote a,
 .Body>blockquote a,
 .Context>blockquote a,
