@@ -498,7 +498,7 @@ a[href="cards/kak-raznesti-moskvu-po-kirpichiku"] {
 .CardSidebar {
     overflow: auto !important;
 }
-.Affiliate {
+.Affiliate, .Affiliate-root {
     background-color: #171717 !important;
 }
 .MainMaterialImage-caption,
@@ -514,6 +514,16 @@ a[href="cards/kak-raznesti-moskvu-po-kirpichiku"] {
 #app span[style*="background-color: rgb(255, 255, 255)"] {
     background-color: transparent !important;
 }
+/* it looks like QuizMaterial was renamed to EmbedMaterial */
+.EmbedMaterial-layout {
+    background-color: #222 !important;
+}
+.EmbedMaterial-container {
+    background-color: rgba(20, 20, 20, 0.8) !important;
+}
+.EmbedMaterial-containerBackground:after {
+    background-color: rgba(48, 48, 48, 0.8) !important;
+}
 .QuizMaterial-backgroundImage--blur:after {
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
@@ -522,7 +532,7 @@ a[href="cards/kak-raznesti-moskvu-po-kirpichiku"] {
     background-color: rgba(16, 16, 16, 0.9) !important;
 }*/
 .GameMaterial-backgroundImage,
-.QuizMaterial-backgroundImage {
+.QuizMaterial-backgroundImage, .EmbedMaterial-containerBackground {
     filter: brightness(0.5);
     -webkit-filter: brightness(0.5);
 }
@@ -765,7 +775,6 @@ mark,
 .Spoiler {
     background-color: #222;
 }
-
 }
 
 @-moz-document url-prefix("https://meduza.io/embed/"), url-prefix("http://meduza.io/embed/") {
@@ -915,7 +924,6 @@ blockquote[class*="SimpleBlock-SimpleBlock__blockquote__"] {
 blockquote[class*="SimpleBlock-SimpleBlock__blockquote__"] a {
     color: #ddd;
 }
-
 }
 
 @-moz-document url("https://meduza.io/static/test/email.htm"), url("http://meduza.io/static/test/email.htm") {
