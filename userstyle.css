@@ -167,6 +167,10 @@ body,
 .PopupHeader-title{
     color: #ddd;
 }
+.EmbedBlock-caption,
+.IframeBlock-caption {
+    color: #888;
+}
 .PictureBlock,
 .CardBlock,
 .MediaBlock, .MediaBlock-root {
