@@ -25,7 +25,7 @@
 .MediaMaterial {
     background: none;
 }
-.GeneralMaterial-layout,
+.GeneralMaterial-layout, .GeneralMaterial-dark .GeneralMaterial-layout,
 .Material-container {
     background-color: #141414;
     border-color: transparent;
@@ -62,7 +62,7 @@
 /*.PageBlock,*/
 .VideoBlock, .VideoBlock-content,
 .PostsGroup,
-.NewsBlock,
+.NewsBlock, .NewsBlock-root,
 .AtlasBlock,
 .SuperBlock, .SuperBlock-root,
 .RelatedBlock-root,
@@ -521,6 +521,7 @@ a[href="cards/kak-raznesti-moskvu-po-kirpichiku"] {
 /* it looks like QuizMaterial was renamed to EmbedMaterial */
 .EmbedMaterial-layout {
     background-color: #222 !important;
+    background-blend-mode: soft-light;
 }
 .EmbedMaterial-container {
     background-color: rgba(20, 20, 20, 0.8) !important;
