@@ -182,6 +182,7 @@ body,
 .CardMaterial-card,
 .CardMaterial-share,
 .CardMaterial-html,
+.CardMaterial-nav,
 .CardsPopup-content,
 .NewsPopup-next,
 .MediaBlock-content--1to3.MediaBlock-content--internal_issue_link,
@@ -792,6 +793,10 @@ mark,
 
 .AffiliatePanels-slides:first-child, .SlidesMaterial-root:before {
     background: none;
+}
+
+.CardMaterial-card {
+    box-shadow: none;
 }
 
 }
