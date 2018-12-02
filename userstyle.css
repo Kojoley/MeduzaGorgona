@@ -840,12 +840,18 @@ h6 {
 div[class*="Card__CardWrapper-"] {
     background-color: #2b2b2b;
 }
+div[class*="styled__AnswerContainer-"],
 div[class*="styled__Answer-"] {
     color: #ddd;
     border-color: #444;
 }
+div[class*="styled__Answered-"],
 div[class*="styled__AnswersWrapper-"] {
     border-color: #444;
+    background-color: #333;
+}
+div[class*="styled__Answer-"]:hover {
+    background-color: #444;
 }
 [data-picked=false]:hover {
     background-color: #333;
