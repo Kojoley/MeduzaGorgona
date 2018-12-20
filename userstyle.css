@@ -11,6 +11,7 @@
 .Material--podcast .Material-container,
 .Material--episode .Material-container,
 .Material--wide .Material-container,
+/*.BrandMaterial-root,*/
 .NewsMaterial,
 .LiveMaterial,
 .SlidesMaterial,
@@ -26,7 +27,7 @@
     background: none;
 }
 .GeneralMaterial-layout, .GeneralMaterial-dark .GeneralMaterial-layout,
-.Material-container {
+.Material-container, .BrandMaterial-container {
     background-color: #141414;
     border-color: transparent;
 }
