@@ -978,6 +978,11 @@ blockquote[class*="SimpleBlock-SimpleBlock__blockquote__"] {
 blockquote[class*="SimpleBlock-SimpleBlock__blockquote__"] a {
     color: #ddd;
 }
+
+div[class*="EmbedBlock-object__"] iframe {
+    background-color: #222;
+}
+
 }
 
 @-moz-document url("https://meduza.io/static/test/email.htm"), url("http://meduza.io/static/test/email.htm") {
