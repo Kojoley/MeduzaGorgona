@@ -319,7 +319,7 @@ hr {
 .ChronologyItem-promo,
 .ExchangeRates-item,
 .DownloadApps-listItem,
-.TopicBlock-item, /* it look like .TopicListItem was replaced with .TopicBlock-item */
+.TopicBlock-item, .TopicBlock-featured, /* it look like .TopicListItem was replaced with .TopicBlock-item */
 .TopicListItem--1to1.TopicListItem--index-1.TopicListItem--light,
 .TopicListItem--1to1.TopicListItem--index-2.TopicListItem--light,
 .TopicListItem--index-0.TopicListItem--light,
