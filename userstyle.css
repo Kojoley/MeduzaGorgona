@@ -5,6 +5,7 @@
 .App-root,
 .UnderTheSun-root,
 .InfoPanel-root,
+.InfoPanel-informer,
 .DailySubscribe,
 /*.MediaMaterial,*/
 .Material-share,
@@ -819,6 +820,10 @@ mark,
 }
 
 .NewsBlock-root {
+    box-shadow: none;
+}
+
+.InfoPanel-informer {
     box-shadow: none;
 }
 }
