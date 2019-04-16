@@ -826,6 +826,12 @@ mark,
 .InfoPanel-informer {
     box-shadow: none;
 }
+
+@media (min-width: 1600px) {
+.GeneralMaterial-bordered .GeneralMaterial-layout {
+    box-shadow: inset 0 0 0 1px #222;
+}
+}
 }
 
 @-moz-document url-prefix("https://meduza.io/embed/"), url-prefix("http://meduza.io/embed/") {
