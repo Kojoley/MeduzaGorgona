@@ -899,6 +899,11 @@ div[class*="styled__Answer-"]:hover {
 [data-picked=false]:hover {
     background-color: #333;
 }
+
+div[class*="styled__ShareContainer-"] {
+    background-color: #141414;
+}
+
 }
 
 @-moz-document url-prefix("https://meduza.io/embed/"), url-prefix("http://meduza.io/embed/") {
