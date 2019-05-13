@@ -888,6 +888,7 @@ h6 {
 div[class*="styled__Title-"] {
     color: #ddd;
 }
+div[class*="styled__ShareWrapper-"],
 div[class*="styled__BottomWrapper-"],
 div[class*="Card__CardWrapper-"] {
     background-color: #2b2b2b;
