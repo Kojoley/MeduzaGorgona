@@ -4,7 +4,6 @@
 .App-banner, .App-bannerTop,
 .App-root,
 .UnderTheSun-root,
-.InfoPanel-root,
 .InfoPanel-informer,
 .DailySubscribe,
 /*.MediaMaterial,*/
@@ -13,6 +12,8 @@
 .Material--episode .Material-container,
 .Material--wide .Material-container,
 /*.BrandMaterial-root,*/
+.Grid-container,
+.GeneralMaterial-root,
 .NewsMaterial,
 .LiveMaterial,
 .SlidesMaterial,
@@ -24,6 +25,8 @@
 /*.InfoPanel-root {
     background: rgb(37, 37, 37) !important;
 }*/
+.InfoPanel-root,
+.Chronology-container, .Chronology-footer,
 .MediaMaterial {
     background: none;
 }
@@ -62,8 +65,13 @@
 .DailySubscribe-main,
 .DailyInformer,
 .TopicBlock, .TopicBlock-root,
+.SimpleBlock-root,
 .InfoPanel,
 /*.PageBlock,*/
+.RichBlock-root,
+.RichBlock-image,
+.RichBlock-is1to3 .RichBlock-contentWrap,
+.RichBlock-is1to4 .RichBlock-contentWrap,
 .VideoBlock, .VideoBlock-content,
 .PostsGroup,
 .NewsBlock, .NewsBlock-root,
@@ -85,6 +93,7 @@
     color: inherit;
 }
 
+.Timestamp-root,
 .Topic-meta,
 .EmbedCode-caption,
 .AudioPlayer-title,
@@ -129,6 +138,11 @@
 .NewsPopup {
     background-color: #111 !important;
 }
+.Grid-header h2,
+.RichBlock-root {
+    color: #eee;
+}
+.Chronology-timestamp,
 .PodcastEpisodeMaterial,
 .VideoBlock--1to3 .VideoBlock-title, .VideoBlock--1to4 .VideoBlock-title,
 .PictureBlock--1to3 .PictureBlock-title, .PictureBlock--1to4 .PictureBlock-title,
@@ -161,6 +175,7 @@ body,
 .AmmunitionDescriptionItem--header,
 .Material,
 .Material-content,
+.MaterialPanel-ad,
 .CardSidebar-chapterTitle,
 .CardChapter-title, .CardTitle-title,
 .StaticPopup-title,
@@ -339,10 +354,7 @@ hr {
 .MaterialTopBar-container {
     background: none !important;
 }
-/* it looks like .MaterialTopBar was replaced with .MaterialPanel-sticked */
-.MaterialPanel-sticked,
-.MaterialTopBar,
-.MaterialTopBar--fixed .MaterialTopBar-container {
+.MaterialPanel-sticked .MaterialPanel-container {
     background-color: rgba(32, 32, 32, 0.75) !important;
 }
 .Thrones {
@@ -757,6 +769,7 @@ mark,
 }
 .ChronologyItem, .Chronology-item, .ChronologyItem-root {
     margin: 0;
+    border-radius: 0 !important;
 }
 .ChronologyItem-image {
     border-radius: 0 !important;
@@ -839,6 +852,49 @@ mark,
 /* found in css, not checked */
 .embedly-card .embedly-card-hug iframe,.fb-post {
     background-color: #222;
+}
+
+.TopicBlock-root,
+.RichBlock-root {
+    border-radius: 0 !important;
+}
+
+@media only screen and (min-width: 64em) {
+    .Grid-container,
+    .RichBlock-imageWrap,
+    .RichBlock-is1to1 .RichBlock-imageWrap,
+    .RichBlock-is1to2 .RichBlock-imageWrap,
+    .RichBlock-is1to3 .RichBlock-contentWrap,
+    .RichBlock-is1to4 .RichBlock-contentWrap,
+    .RichBlock-isRich.RichBlock-is1to1 .RichBlock-contentWrap:after,
+    .RichBlock-isRich.RichBlock-is1to2 .RichBlock-contentWrap:after {
+        border-radius: 0 !important;
+    }
+
+    .RichBlock-is1to3 .RichBlock-contentWrap,
+    .RichBlock-is1to4 .RichBlock-contentWrap {
+        box-shadow: inset 0 -1px #181818, inset 0 0 0 1px #191919;
+    }
+
+    .RichBlock-meta {
+        color: #bbb;
+    }
+}
+
+.RichBlock-promo {
+    background-color: rgba(40, 40, 40, 0.85);
+    box-shadow: none !important;
+}
+
+.RichBlock-logo:after {
+    border-left-color: rgba(20, 20, 20, 0.3);
+}
+
+.Header-item:after {
+    border-color: #444;
+}
+.MaterialPanel-adSource:before {
+    background-color: #444;
 }
 
 }
