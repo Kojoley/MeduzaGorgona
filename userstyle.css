@@ -808,7 +808,8 @@ mark,
 }
 
 .Spoiler, .Spoiler-root {
-    background-color: #222;
+    border-top: 3px solid rgba(100%,100%,100%,.2);
+    border-bottom: 3px solid rgba(100%,100%,100%,.2);
 }
 
 .SlidesMaterial-slide {
@@ -896,6 +897,13 @@ mark,
 }
 .MaterialPanel-adSource:before {
     background-color: #444;
+}
+
+.Button-gray {
+    background-color: #444;
+}
+.Button-gray:hover {
+    background-color: #555;
 }
 
 }
