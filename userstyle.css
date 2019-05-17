@@ -72,6 +72,7 @@
 .RichBlock-image,
 .RichBlock-is1to3 .RichBlock-contentWrap,
 .RichBlock-is1to4 .RichBlock-contentWrap,
+.BriefSubscription-root,
 .VideoBlock, .VideoBlock-content,
 .PostsGroup,
 .NewsBlock, .NewsBlock-root,
@@ -856,6 +857,7 @@ mark,
     background-color: #222;
 }
 
+.BriefSubscription-root,
 .TopicBlock-root,
 .RichBlock-root {
     border-radius: 0 !important;
