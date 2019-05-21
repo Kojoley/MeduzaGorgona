@@ -67,6 +67,7 @@
 .TopicBlock, .TopicBlock-root,
 .SimpleBlock-root,
 .InfoPanel,
+.AudioPanel-root,
 /*.PageBlock,*/
 .RichBlock-root,
 .RichBlock-image,
@@ -908,6 +909,9 @@ mark,
     background-color: #555;
 }
 
+.PlayButton-isInAudioPanel {
+    fill: #ddd;
+}
 }
 
 @-moz-document url-prefix("https://meduza.io/embed/"), url-prefix("http://meduza.io/embed/") {
