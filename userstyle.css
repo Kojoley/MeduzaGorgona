@@ -12,6 +12,9 @@
 .Material--episode .Material-container,
 .Material--wide .Material-container,
 /*.BrandMaterial-root,*/
+.Feed-container,
+.Feed-header,
+.Feed-header h2,
 .GeneralMaterial-root,
 .NewsMaterial,
 .LiveMaterial,
@@ -27,9 +30,13 @@
 .Grid-container,
 .Skeleton-feed,
 .InfoPanel-root,
+.EpisodeBlock-root,
 .Chronology-container, .Chronology-footer,
 .MediaMaterial {
     background: none;
+}
+.Feed-groupItem {
+    border: none;
 }
 .GeneralMaterial-layout, .GeneralMaterial-dark .GeneralMaterial-layout,
 .Material-container, .BrandMaterial-container {
@@ -51,6 +58,8 @@
     background-color: #111 !important;
 }*/
 
+.ExchangeBlock-root,
+.InformerBlock-root,
 .Image-placeholder,
 .Messenger-root,
 .LiveMaterial-header,
@@ -70,16 +79,20 @@
 .InfoPanel,
 .AudioPanel-root,
 /*.PageBlock,*/
+.Feed-groupItem,
 .RichBlock-root,
 .RichBlock-image,
 .RichBlock-is1to3 .RichBlock-contentWrap,
 .RichBlock-is1to4 .RichBlock-contentWrap,
+.RichBlock-isMobile.RichBlock-isPodcast .RichBlock-contentWrap,
+.RichBlock-isMobile.RichBlock-isRich .RichBlock-contentWrap,
 .BriefSubscription-root,
 .VideoBlock, .VideoBlock-content,
 .PostsGroup,
 .NewsBlock, .NewsBlock-root,
 .AtlasBlock,
 .SuperBlock, .SuperBlock-root,
+.EpisodeBlock-root,
 .BriefBlock-root,
 .StaticPage-root,
 .RelatedBlock-root,
@@ -668,6 +681,8 @@ mark {
     background-color: #262626 !important;
 }
 
+.RichBlock-isMobile.RichBlock-isPodcast .RichBlock-contentWrap,
+.RichBlock-isMobile.RichBlock-isRich .RichBlock-contentWrap,
 .App--isStaticPage .App-content {
     box-shadow: none !important;
 }
@@ -859,15 +874,16 @@ mark,
     background-color: #222;
 }
 
+.Feed-groupItem,
 .BriefSubscription-root,
 .TopicBlock-root,
-.RichBlock-root {
+.RichBlock-root,
+.RichBlock-imageWrap {
     border-radius: 0 !important;
 }
 
 @media only screen and (min-width: 64em) {
     .Grid-container,
-    .RichBlock-imageWrap,
     .RichBlock-is1to1 .RichBlock-imageWrap,
     .RichBlock-is1to2 .RichBlock-imageWrap,
     .RichBlock-is1to3 .RichBlock-contentWrap,
