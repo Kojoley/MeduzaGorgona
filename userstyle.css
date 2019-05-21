@@ -12,7 +12,6 @@
 .Material--episode .Material-container,
 .Material--wide .Material-container,
 /*.BrandMaterial-root,*/
-.Grid-container,
 .GeneralMaterial-root,
 .NewsMaterial,
 .LiveMaterial,
@@ -25,6 +24,8 @@
 /*.InfoPanel-root {
     background: rgb(37, 37, 37) !important;
 }*/
+.Grid-container,
+.Skeleton-feed,
 .InfoPanel-root,
 .Chronology-container, .Chronology-footer,
 .MediaMaterial {
