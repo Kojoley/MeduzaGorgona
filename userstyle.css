@@ -6,6 +6,7 @@
 .UnderTheSun-root,
 .InfoPanel-informer,
 .DailySubscribe,
+.EmbedMaterial-root,
 /*.MediaMaterial,*/
 .Material-share,
 .Material--podcast .Material-container,
@@ -975,6 +976,11 @@ h6 {
     background-color: rgba(255, 255, 255, .25);
 }
 
+div[class*="styled__BottomBlock-sc-"] {
+    background-color: #222;
+}
+
+div[class*="styled__CommonQuestion-sc-"],
 div[class*="styled__Title-"] {
     color: #ddd;
 }
@@ -1000,6 +1006,7 @@ div[class*="styled__Answer-"]:hover {
     background-color: #333;
 }
 
+div[class*="styled__InnerContainer-sc-"],
 div[class*="styled__ShareContainer-"] {
     background-color: #141414;
 }
