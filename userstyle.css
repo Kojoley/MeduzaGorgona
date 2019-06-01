@@ -1016,9 +1016,7 @@ div[class*="styled__ShareContainer-"] {
 /* I fkn love React!!! */
 
 .root,
-._10yRJUnbYnrWKdBlSS5raX,
-.root,
-._206L97c6prWBC9MOpN4a7k {
+._10yRJUnbYnrWKdBlSS5raX {
     background-color: #111 !important;
 }
 body .table,
@@ -1060,6 +1058,29 @@ body ._1En7G0FsWxYsMzLD-bCYLP:last-child:after,
 body ._1En7G0FsWxYsMzLD-bCYLP:before,
 body ._1En7G0FsWxYsMzLD-bCYLP:hover {
     background-color: #333;
+}
+
+._2AY6r6MSznT8aRP8kGI4FC span {
+    background-color: #333;
+    border-color: #444;
+    color: #bbb;
+}
+._2AY6r6MSznT8aRP8kGI4FC span:hover {
+    background-color: #222;
+}
+.X731iQMq1VUdIt_Pfktza {
+    color: #ddd;
+}
+._31LVvaw_HYVMQCBsRwtZvL {
+    color: #ccc;
+    border-color: #ccc;
+}
+._1-m42QjSkuYPCdfEU-nOCO {
+    color: #bbb;
+}
+
+._17q5OQDY1K4q15oHqYuKEo {
+    background-color: #222;
 }
 
 /* Quiz */
