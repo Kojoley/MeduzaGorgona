@@ -13,6 +13,7 @@
 .Material--episode .Material-container,
 .Material--wide .Material-container,
 /*.BrandMaterial-root,*/
+.EmbedMaterial-background,
 .Feed-container,
 .Feed-header,
 .Feed-header h2,
@@ -931,6 +932,10 @@ mark,
 
 .PlayButton-isInAudioPanel {
     fill: #ddd;
+}
+
+div.EmbedMaterial-background[style='background-image: url("/image/attachments/images/004/150/295/original/PBruua7K-3gkM-bquEU0aw.jpg");'] {
+    background-image: none !important;
 }
 }
 
