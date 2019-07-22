@@ -20,8 +20,6 @@
 .GeneralMaterial-root,
 .NewsMaterial,
 .LiveMaterial,
-.SlidesMaterial,
-.SlidesMaterial-bg,
 .QuizMaterial,
 .QuizTopBar {
     background: #141414 !important;
@@ -29,6 +27,11 @@
 /*.InfoPanel-root {
     background: rgb(37, 37, 37) !important;
 }*/
+.SlidesMaterial, .SlidesMaterial-root,
+.SlidesMaterial-bg,
+.SlidesMaterial-slide:first-child {
+    background: none !important;
+}
 .LiveMaterial-root,
 .CardMaterial-root,
 .CardMaterial-head,
@@ -1016,6 +1019,17 @@ div[class*="styled__InnerContainer-sc-"],
 div[class*="styled__ShareContainer-"] {
     background-color: #141414;
 }
+
+blockquote[class*="SimpleBlock-blockquote"] {
+    background-color: #634117;
+}
+blockquote[class*="SimpleBlock-blockquote"] a {
+    color: #ddd;
+    box-shadow: inset 0 -1px #ddd;
+}
+/*blockquote[class*="SimpleBlock-blockquote"] a:hover {
+}*/
+
 }
 
 @-moz-document url-prefix("https://meduza.io/embed/"), url-prefix("http://meduza.io/embed/") {
