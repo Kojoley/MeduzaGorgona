@@ -998,6 +998,7 @@ div[class*="styled__BottomWrapper-"],
 div[class*="Card__CardWrapper-"] {
     background-color: #2b2b2b;
 }
+.hAyLbt .styled__AnswerContainer-sc-1ya3wu2-2,
 div[class*="styled__AnswerContainer-"],
 div[class*="styled__Answer-"] {
     color: #ddd;
@@ -1152,6 +1153,18 @@ blockquote[class*="SimpleBlock-SimpleBlock__blockquote__"] a {
 div[class*="EmbedBlock-object__"] iframe {
     background-color: #222;
 }
+
+
+.jfJynH {
+    background-color: #222;
+}
+.dNeZKW {
+    border-bottom-color: #444;
+}
+.bEFjPK::before {
+    filter: invert(0.7);
+}
+
 }
 
 @-moz-document url("https://meduza.io/static/test/email.htm"), url("http://meduza.io/static/test/email.htm") {
