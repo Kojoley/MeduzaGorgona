@@ -336,6 +336,16 @@ table, tr, td { /* very rough */
     background-color: #262626 !important;
     border-color: #3b3b3b !important;
 }
+.Table-table {
+    border-color: #2b2b2b;
+}
+.Table-cell {
+    border-color: #2b2b2b;
+    background-color: #222;
+}
+.Table-gray {
+    background-color: #282828;
+}
 hr {
     border-color: #333;
 }
