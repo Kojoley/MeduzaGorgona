@@ -1198,6 +1198,12 @@ p {
 }
 }
 
+@-moz-document url-prefix("https://meduza.io/digests/daily/"), url-prefix("http://meduza.io/digests/daily/") {
+body {
+    background-color: #222;
+}
+}
+
 @-moz-document regexp("https://www\\.facebook\\.com/.*/plugins/post\\.php.*domain%3Dmeduza\\.io.*"), regexp("https://www\\.instagram\\.com/p/.*/embed/.*rd=[^=&]*meduza\\.io.*"), regexp("https://imgur\\.com/.*/embed.*ref=[^=&]*meduza\\.io.*") {
 html, body, .HoverCardCTA, .HoverCard .HoverCardRoot {
     background-color: #222 !important;
