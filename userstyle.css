@@ -389,6 +389,7 @@ hr {
 .MaterialTopBar-container {
     background: none !important;
 }
+.MaterialPanel-stuck .MaterialPanel-container,
 .MaterialPanel-sticked .MaterialPanel-container {
     background-color: rgba(32, 32, 32, 0.75) !important;
 }
